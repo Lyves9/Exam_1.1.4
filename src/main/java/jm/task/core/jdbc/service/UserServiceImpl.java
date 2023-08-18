@@ -13,7 +13,6 @@ import java.util.List;
 
 public class UserServiceImpl implements UserService {
     UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
-    Connection connection = Util.getConnection();
     public void createUsersTable() {
         userDaoJDBC.createUsersTable();
     }
